@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 async function connectDatabase() {
     const dbUri = "mongodb://localhost:27017/nykaa"

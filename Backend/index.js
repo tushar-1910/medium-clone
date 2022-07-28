@@ -22,7 +22,7 @@ function logger(req, res, next) {
 
 
 connectDatabase().then(() => {
-    app.listen(3001, () => {
-        console.log("Server running at http://localhost:3001")
+    app.listen(8080, () => {
+        console.log("Server running at http://localhost:8080")
     })
 })
