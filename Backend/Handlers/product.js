@@ -20,7 +20,19 @@ const getAllProducts=async (req,res,next)=>{
      }
 }
 
+const getProductById=async (req,res,next)=>{
+   const product=await Products.findById(req.params.productId);
+   if(!product){
+        return res.status(404).send({
+            "message":"product not found"
+        })
+   }else{
+        return res.status(200).send(product);
+   }
+}
+
 module.exports ={
     createProduct,
-    getAllProducts
+    getAllProducts,
+    getProductById
 }

@@ -214,3 +214,140 @@ a{
 /* #categorybox{
     display:block;
 } */
+
+
+
+
+.productList-wrapper{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.productWrapper{
+    padding: 0 0.65rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    height: 440px;
+    min-width: 250px;
+    width: 33.33%;
+    overflow: hidden;
+}
+.css-pw1{
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgb(226 226 226 / 25%),0 1px 2px rgb(226 226 226 / 50%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer; 
+}
+.css-pw11{
+    padding: 30px 10.18%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+}
+.pcontent{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+.ptitle{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    overflow: hidden;
+    height: 42px;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    color: #001325;
+    text-overflow: ellipsis;
+}
+.prate{
+    line-height: 20px;
+    margin-bottom: 0.75rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.css-mrptag{
+    margin-right: 0.25rem;
+    color: rgba(0,19,37,0.64);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+.css-mrptag span{
+    color: #001325;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+.css-mrptag1{
+    margin-right: 0.25rem;
+    color: rgba(0,19,37,0.64);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+.css-mrptag1 span{
+    text-decoration-line: line-through;
+    padding-left: 0.25rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+.css-originalprice{
+    color: #001325;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+.productoffer{
+    color: #008945;
+    margin-left: 4px;
+    padding-left: 4px;
+    border-left: 1px solid #eeeeee;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+.offertag p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #fc2779;
+    margin-bottom: 0.5rem;
+}
+
+ .css-ratingimage   {
+    line-height: 20px;
+    margin-bottom: 0.75rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { getProductList } from "../Redux/moisturizers/action";
+import { useNavigate } from "react-router-dom";
 import   "./moisturizers.css";
 
 
@@ -8,10 +10,11 @@ export const Moisturizers=()=>{
 
     const {pdata,isLoading,isError}=useSelector((state)=>state.pdata);
     const dispatch=useDispatch();
+    const navigate=useNavigate();
     useEffect(()=>{
         dispatch(getProductList(""));
     },[dispatch])
-
+    
     if(isLoading){
         return <h1>Loading ...</h1>
     }
@@ -25,7 +28,9 @@ export const Moisturizers=()=>{
            return ele.category==="Moisturizers"
         })
     }
-    console.log(isLoading,isError,pdata,moistdata)
+    
+    
+    //console.log(isLoading,isError,pdata,moistdata)
     return (
         <div className="moistCont1">
             <div className="moistCont11">
@@ -788,14 +793,45 @@ export const Moisturizers=()=>{
                     </div>
                   </div>
                   <div className="productListing">
-                    <div>{
-                          moistdata.map((ele)=>(
-                            <div style={{display:"flex",flexDirection:"row"}}>
-                              <img src={ele.image_url} alt="" />
-                            </div>
-                          ))
-                        
-                        }
+                    <div className="productList-wrapper">
+                      {
+                         moistdata.map((ele)=>(
+                          <div key={ele._id} onClick={()=>{navigate(`/productdesc/${ele._id}`)}} className="productWrapper">
+                             <div className="css-pw1">
+                                <div className="css-pw11">
+                                  <img  src={ele.image_url} alt="" width="100%" height="200px" />
+                                  <div className="pcontent">
+                                    <div className="ptitle">
+                                      {ele.name}
+                                    </div>
+                                    <div className="prate">
+                                      {
+                                        ele.discount===0 ? 
+                                        <div>
+                                           <span className="css-mrptag">MRP : <span>₹{ele.mrp}</span> </span>
+                                        </div> 
+                                        : <div>
+                                            <span className="css-mrptag1">MRP : <span>₹{ele.mrp}</span> </span>
+                                            <span className="css-originalprice">₹{ele.price}</span>
+                                            <span className="productoffer">{ele.discount}% Off</span>
+                                        </div> 
+                                      }
+                                    </div>
+                                    <div className="offertag">
+                                      {
+                                         ele.offertag ? <p>{ele.offertag}</p> : <p></p>
+                                      }
+                                    </div>
+                                    <div className="css-ratingimage">
+                                       <span ><div style={{display:"flex",alignItems:"center",flexDirection:"row"}}><img src={require("./ratingstars.PNG")} /></div></span>
+                                       <span>({Math.floor(Math.random() * (3000 - 200) + 200)})</span>
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                          </div>       
+                         ))       
+                      }   
                     </div>
                   </div>
                 </div>
@@ -804,3 +840,14 @@ export const Moisturizers=()=>{
         </div>
     )
 }
+
+
+                    // <div>{
+                    //       moistdata.map((ele)=>(
+                    //         <div style={{display:"flex",flexDirection:"row"}}>
+                    //           <img src={ele.image_url} alt="" />
+                    //         </div>
+                    //       ))
+                        
+                    //     }
+                    // </div>
