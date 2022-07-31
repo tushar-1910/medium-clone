@@ -209,6 +209,7 @@ a{
    -moz-box-align: center;
    align-items: center;
    background: rgba(101, 119, 134, 0.16) none repeat scroll 0% 0%;
+   background: white;
 }
 
 /* #categorybox{
