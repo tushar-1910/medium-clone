@@ -49,7 +49,7 @@ export const Haircare=()=>{
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="popularity"){
-        fetch(`http://localhost:8080/productbycategory/?category=Moisturizers`)
+        fetch(`http://localhost:8080/productbycategory/?category=Haircare`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="facemoisturizers"){
