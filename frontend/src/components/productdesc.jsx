@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { getProductList } from "../Redux/moisturizers/action";
 import "./productdesc.css";
 
 
@@ -20,7 +18,22 @@ export const ProductDescription=()=>{
     getProductById();
    },[])
 
+
     console.log("checking product data",proddata);
+    const handlecart=()=>{
+      fetch(`http://localhost:8080/orders`,{
+         method:"POST",
+         headers:{
+            "Content-Type":"application/json",
+            "token":localStorage.getItem("token")
+         }
+      })
+      .then((res)=>res.json())
+      .then((response)=>{
+         console.log(response);
+         alert("Item added to bag...")
+      });
+    }
     if(proddata){
         return (
             <div className="css-proddescbody">
@@ -135,7 +148,7 @@ export const ProductDescription=()=>{
                           <div className="css-cartboxWrapper">
                              <div className="css-cbw1">
                                  <div className="css-cbw11">
-                                    <button className="css-cbwbtn">
+                                    <button onClick={()=>handlecart()} className="css-cbwbtn">
                                         <span className="css-cbwbtn-text">Add to Bag</span>
                                     </button>
                                  </div>
