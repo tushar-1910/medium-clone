@@ -77,7 +77,7 @@ async function AuthLog(req,res){
                         id: existingNumber._id
                     }, SECRET)
                     
-                    res.status(202).send(encryptionToken)
+                    res.status(202).send(JSON.stringify(encryptionToken))
                 }else{
                     res.status(406).send("Wrong Password")
                 }

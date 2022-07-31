@@ -6,7 +6,7 @@ const theme = createTheme({
       main: "#fc2779",
     },
     secondary:{
-        main: "#bdbdbd",
+        main: "#e0e0e0",
     },
     error: {
       main: "#ff0000",

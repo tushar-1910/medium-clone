@@ -4,12 +4,14 @@ import { GrClose } from "react-icons/gr";
 import { Box , Button, ThemeProvider, TextField} from "@mui/material"
 import { theme } from "./theme";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { InputData } from "../redux/authRedux/action";
 import { Api_Url } from "../App";
 
 export const AuthLog = () => {
 
     const navigate = useNavigate()
+    const dispatch = useDispatch()
     const { Input } = useSelector((state) => state.Input)
 
     
@@ -25,7 +27,7 @@ export const AuthLog = () => {
         setPassword(e.target.value)
     }
 
-    async function HandleLogin(){
+    async function Login(){
 
         try {
             const response = await fetch(`${Api_Url}/auth/login`,{
@@ -39,21 +41,34 @@ export const AuthLog = () => {
                 })
             })
 
+            const ResData = response.json()
+            
             if(response.status === 202){
-                let ResData = await response.json()
-                localStorage.setItem("token", JSON.stringify(ResData.encryptionToken))
-
-                setincorrectPass(false)
-                navigate("/")
+                return ResData
             }else if( response.status === 406){
-                setincorrectPass(true)
+                return null
             }
     
         } catch (error) {
-            console.log(error)
+            return error
         }
     }
 
+    const HandleLogin = () => {
+        Login()
+        .then((res) => {
+            if(res === null){
+                setincorrectPass(true)
+                localStorage.setItem("token", "")
+            }else{
+                localStorage.setItem("token", res)
+                setincorrectPass(false)
+                dispatch(InputData(""))
+                navigate("/")
+            }
+        })
+        .catch((err) => console.log(err))
+    }
 
 
 
