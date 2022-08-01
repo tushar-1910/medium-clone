@@ -5,7 +5,7 @@ body{
 }
 
 .container{
-    width: 25vw;
+    width: 28vw;
     min-width: 300px;
     max-width: 1200px;
     height: auto;
@@ -19,7 +19,8 @@ body{
 }
 
 .text{
-    font-size: 17px;
+    font-size: 16px;
+    margin-top: 10px;
     color: rgba(0, 0, 0, 0.8);
 }
 

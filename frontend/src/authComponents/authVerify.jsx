@@ -66,10 +66,12 @@ export const AuthVerify = () => {
                 })
 
                 if(response.status === 302){
-                    if(!checkData(+input)){
+                    if(!checkData(+input) === false){
+                        setVerifyNumber(false)
                         navigate("/auth/login")
                     }
                 }else if (response.status === 404){
+                    setVerifyNumber(false)
                     navigate("/auth/register")
                 }
             }catch(err) {
@@ -92,10 +94,12 @@ export const AuthVerify = () => {
 
                 
                 if(response.status === 302){
-                    if(!checkData(input)){
+                    if(!checkData(input) === false){
+                        setVerifyEmail(false)
                         navigate("/auth/login")
                     }
                 }else if (response.status === 404){
+                    setVerifyEmail(false)
                     navigate("/auth/register")
                 }
             }catch(err) {

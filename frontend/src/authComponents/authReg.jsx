@@ -50,7 +50,7 @@ export const AuthReg = () => {
             <hr/>
 
             <Box sx={{display:"flex", alignItems:"center", justifyContent:"center", marginBottom:"25px"}}>
-            <p className="text" style={{fontSize:"15px", marginRight:"5px"}}>Register to Earn </p><p style={{color:"#fc2779", fontSize:"15px"}}> 2000  Reward Points!</p>
+            <p className="text" style={{fontSize:"15px", marginRight:"5px"}}>Register to Earn </p><p className="text" style={{color:"#fc2779", fontSize:"15px"}}> 2000  Reward Points!</p>
             </Box>
 
 
