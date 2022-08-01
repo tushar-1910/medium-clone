@@ -5,7 +5,7 @@ import product from './product1.png';
 import Offers from './offer-img.png'
 import Steals from './steal-img.png'
 
-import { Carousel1 } from './Carousel'
+// import { Carousel1 } from './Carousel'
 import './Homepage.css'
 // import images from './images'
 
@@ -14,7 +14,7 @@ return(
     <>
     {/* <h2>this is my home page</h2> */}
     <img className='first-img1' src = "https://images-static.nykaa.com/uploads/c758ab69-2581-44a6-bcc2-b8e90fb5db13.gif?tr=w-1200,cm-pad_resize" alt = "" />
-   <div><Carousel1 /></div>
+   {/* <div><Carousel1 /></div> */}
     <img className = "first-img" src = "https://images-static.nykaa.com/uploads/30732215-3b4e-4ea5-ae70-b171d7c64455.gif?tr=w-1200,cm-pad_resize" alt = ""/>
     <img  className = "first-img" src = "https://images-static.nykaa.com/uploads/35a003cc-c7ed-4f76-bccb-0362784092ef.png?tr=w-1200,cm-pad_resize" alt = ""/>
      <div className='main-box'>

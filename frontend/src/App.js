@@ -2,8 +2,7 @@
 import './App.css';
 import React from 'react';
 import {Home} from './components/home/Home';
-import { Homepage } from './Components/Homepage';
-
+import { Homepage } from './components/Homepage/Homepage';
 
 function App() {
   return (
