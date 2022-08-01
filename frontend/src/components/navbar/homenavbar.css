@@ -90,12 +90,17 @@
     margin-top: 33px;
     left:110px;
     background-color:white;
+    transition:0s 180s;
     }
 .navbarMen:hover .navbarMenBlock{
    display: block;
     display: flex;
     position:fixed;
     flex-direction: row;
+}
+.navbarMenBlock:hover{
+    display: block;
+    transition: 0;
 }
 .navbarMenProducts{
     /* width: 19px; */

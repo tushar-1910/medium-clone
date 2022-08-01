@@ -212,12 +212,10 @@ const {showBag,handleshowBag}=useContext(Contexts)
     let data = await res.json();
     setCartProducts(data);
   }
-  useEffect(() => {
-    if(showBag){
+  if(showBag){
     getCart();
     }
-  }
-  ,[cartProducts]);
+  
   let price = 0;
   let discont = 0;
   let off_price = 0;
@@ -227,6 +225,7 @@ const {showBag,handleshowBag}=useContext(Contexts)
       off_price +=  +item.product.price * +item.quantity;
     }
     discont += price - off_price;
+    localStorage.setItem("price",price);
   return (
     <div>
        {showBag && (

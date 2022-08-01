@@ -42,9 +42,9 @@ const addressChange = async (e)=>{
   })
   let data =await res.json();
   console.log(data);
-  navigate("/payment")
+  navigate("/")
   
-  alert("posted")
+  // alert("posted")
    }
    else{
     // ("not posted")
