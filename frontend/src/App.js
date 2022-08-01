@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import { Homepage } from './Components/Homepage';
+import  Address from './Components/AddressComponents/Address'
+import { Homepage } from './Components/HomeComponents/Homepage';
 
 function App() {
   return (
     <div className="App">
     
-      {/* <h1>hello</h1> */}
-      < Homepage />
+      
+      <Address/>
    </div>
   );
 }
