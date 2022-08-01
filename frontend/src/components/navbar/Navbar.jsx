@@ -248,7 +248,1447 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <Link to="/hair" style={{textDecoration: "none", color: '#818181'}}>
+            <div className="navbarMen">
+                <Link to="hair" style={{textDecoration: 'none', color: '#818181'}}>
+              Hair
+              </Link>
+              <div className="navbarMenBlock">
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">CLEANSERS</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facewash</div>
+                        <div>Clensers</div>
+                        <div>Scrubs & Exfoliaters</div>
+                        <div>Facial Wipes</div>
+                        <div>Makeup Remover</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">
+                      Trending searches
+                    </div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Toners Under 1000</div>
+                        <div>Facewash For Oily Skin</div>
+                        <div>Oil Free face Moisturizers</div>
+                        <div>Lip Balm Under 500</div>
+                        <div>Vitamin C Serum</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts ">
+                    <div className="navbarMenProdHeading ">Moisturizers</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Moisturizer & Day</div>
+                        <div>Cream</div>
+                        <div>Night Cream</div>
+                        <div>Face Oils</div>
+                        <div>Serum & Essence</div>
+                        <div>BB & CC Creams</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts navbar-background">
+                    <div className="navbarMenProdHeading">Masks</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Masks & Peels</div>
+                        <div>Sheet Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">kts & combos</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facial Kits</div>
+                        <div>Combos@Nykka</div>
+                        <div>Gifts Sets</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Eye care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Under Eye Cream & Serums</div>
+                        <div>Dream Circles & Wrinkles</div>
+                        <div>Poffiness</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Makeup Removal</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Lip care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Lip Balm</div>
+                        <div>Lip Scrub</div>
+                        <div>Lip Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">neck creams</div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Body care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Body Butter</div>
+                        <div>Lotions & Creams</div>
+                        <div>Massage Oils</div>
+                        <div>Anti Strech mark Creams</div>
+                        <div>Anti Cellulite Creams</div>
+                        <div>Bath Salts</div>
+                        <div>Shower Gels & Body Wash </div>
+                        <div>Bath Scrubs</div>
+                        <div>Soaps</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Sun Care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Sunscreen</div>
+                        <div>Body Sunscreen</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">hands & Feet</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Hand Creams</div>
+                        <div>Foot Creams</div>
+                        <div>Hand & Foot masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Tops Brands</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>NYKKA SKINRX</div>
+                        <div>Innisfree</div>
+                        <div>L'oreal Paris</div>
+                        <div>Nykaa Naturals</div>
+                        <div>Neutrogena</div>
+                        <div>The Face Shop</div>
+                        <div>Nivea</div>
+                        <div>Mamaearth</div>
+                        <div>Plum</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className=".navbar-background">
+                    <div className="navbarMenProducts">
+                      <div className="navbarMenProdHeading">
+                        shop by concern
+                      </div>
+                      <div className="navbarMenProdHeadingList">
+                        <div className="navbarMenProdHeadingListHover">
+                          <div>Skin Brightening</div>
+                          <div>Acne Treatment</div>
+                          <div>Dull Skin Treatment</div>
+                          <div>Pigmentation</div>
+                          <div>Anti Ageing</div>
+                          <div>Tan Removal</div>
+                          <div>Face Treatment </div>
+                          <div>Pore Care</div>
+                          <div>skin Dryness</div>
+                          <div>Sun Protection</div>
+                          <div>Oil Control</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="navbarMen">
+                <Link to="/" style={{textDecoration: 'none', color: '#818181'}}>
+              Appliances
+              </Link>
+              <div className="navbarMenBlock">
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">CLEANSERS</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facewash</div>
+                        <div>Clensers</div>
+                        <div>Scrubs & Exfoliaters</div>
+                        <div>Facial Wipes</div>
+                        <div>Makeup Remover</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">
+                      Trending searches
+                    </div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Toners Under 1000</div>
+                        <div>Facewash For Oily Skin</div>
+                        <div>Oil Free face Moisturizers</div>
+                        <div>Lip Balm Under 500</div>
+                        <div>Vitamin C Serum</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts ">
+                    <div className="navbarMenProdHeading ">Moisturizers</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Moisturizer & Day</div>
+                        <div>Cream</div>
+                        <div>Night Cream</div>
+                        <div>Face Oils</div>
+                        <div>Serum & Essence</div>
+                        <div>BB & CC Creams</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts navbar-background">
+                    <div className="navbarMenProdHeading">Masks</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Masks & Peels</div>
+                        <div>Sheet Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">kts & combos</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facial Kits</div>
+                        <div>Combos@Nykka</div>
+                        <div>Gifts Sets</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Eye care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Under Eye Cream & Serums</div>
+                        <div>Dream Circles & Wrinkles</div>
+                        <div>Poffiness</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Makeup Removal</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Lip care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Lip Balm</div>
+                        <div>Lip Scrub</div>
+                        <div>Lip Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">neck creams</div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Body care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Body Butter</div>
+                        <div>Lotions & Creams</div>
+                        <div>Massage Oils</div>
+                        <div>Anti Strech mark Creams</div>
+                        <div>Anti Cellulite Creams</div>
+                        <div>Bath Salts</div>
+                        <div>Shower Gels & Body Wash </div>
+                        <div>Bath Scrubs</div>
+                        <div>Soaps</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Sun Care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Sunscreen</div>
+                        <div>Body Sunscreen</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">hands & Feet</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Hand Creams</div>
+                        <div>Foot Creams</div>
+                        <div>Hand & Foot masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Tops Brands</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>NYKKA SKINRX</div>
+                        <div>Innisfree</div>
+                        <div>L'oreal Paris</div>
+                        <div>Nykaa Naturals</div>
+                        <div>Neutrogena</div>
+                        <div>The Face Shop</div>
+                        <div>Nivea</div>
+                        <div>Mamaearth</div>
+                        <div>Plum</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className=".navbar-background">
+                    <div className="navbarMenProducts">
+                      <div className="navbarMenProdHeading">
+                        shop by concern
+                      </div>
+                      <div className="navbarMenProdHeadingList">
+                        <div className="navbarMenProdHeadingListHover">
+                          <div>Skin Brightening</div>
+                          <div>Acne Treatment</div>
+                          <div>Dull Skin Treatment</div>
+                          <div>Pigmentation</div>
+                          <div>Anti Ageing</div>
+                          <div>Tan Removal</div>
+                          <div>Face Treatment </div>
+                          <div>Pore Care</div>
+                          <div>skin Dryness</div>
+                          <div>Sun Protection</div>
+                          <div>Oil Control</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="navbarMen">
+                <Link to="/" style={{textDecoration: 'none', color: '#818181'}}>
+              Health and care
+              </Link>
+              <div className="navbarMenBlock">
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">CLEANSERS</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facewash</div>
+                        <div>Clensers</div>
+                        <div>Scrubs & Exfoliaters</div>
+                        <div>Facial Wipes</div>
+                        <div>Makeup Remover</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">
+                      Trending searches
+                    </div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Toners Under 1000</div>
+                        <div>Facewash For Oily Skin</div>
+                        <div>Oil Free face Moisturizers</div>
+                        <div>Lip Balm Under 500</div>
+                        <div>Vitamin C Serum</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts ">
+                    <div className="navbarMenProdHeading ">Moisturizers</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Moisturizer & Day</div>
+                        <div>Cream</div>
+                        <div>Night Cream</div>
+                        <div>Face Oils</div>
+                        <div>Serum & Essence</div>
+                        <div>BB & CC Creams</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts navbar-background">
+                    <div className="navbarMenProdHeading">Masks</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Masks & Peels</div>
+                        <div>Sheet Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">kts & combos</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facial Kits</div>
+                        <div>Combos@Nykka</div>
+                        <div>Gifts Sets</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Eye care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Under Eye Cream & Serums</div>
+                        <div>Dream Circles & Wrinkles</div>
+                        <div>Poffiness</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Makeup Removal</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Lip care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Lip Balm</div>
+                        <div>Lip Scrub</div>
+                        <div>Lip Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">neck creams</div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Body care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Body Butter</div>
+                        <div>Lotions & Creams</div>
+                        <div>Massage Oils</div>
+                        <div>Anti Strech mark Creams</div>
+                        <div>Anti Cellulite Creams</div>
+                        <div>Bath Salts</div>
+                        <div>Shower Gels & Body Wash </div>
+                        <div>Bath Scrubs</div>
+                        <div>Soaps</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Sun Care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Sunscreen</div>
+                        <div>Body Sunscreen</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">hands & Feet</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Hand Creams</div>
+                        <div>Foot Creams</div>
+                        <div>Hand & Foot masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Tops Brands</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>NYKKA SKINRX</div>
+                        <div>Innisfree</div>
+                        <div>L'oreal Paris</div>
+                        <div>Nykaa Naturals</div>
+                        <div>Neutrogena</div>
+                        <div>The Face Shop</div>
+                        <div>Nivea</div>
+                        <div>Mamaearth</div>
+                        <div>Plum</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className=".navbar-background">
+                    <div className="navbarMenProducts">
+                      <div className="navbarMenProdHeading">
+                        shop by concern
+                      </div>
+                      <div className="navbarMenProdHeadingList">
+                        <div className="navbarMenProdHeadingListHover">
+                          <div>Skin Brightening</div>
+                          <div>Acne Treatment</div>
+                          <div>Dull Skin Treatment</div>
+                          <div>Pigmentation</div>
+                          <div>Anti Ageing</div>
+                          <div>Tan Removal</div>
+                          <div>Face Treatment </div>
+                          <div>Pore Care</div>
+                          <div>skin Dryness</div>
+                          <div>Sun Protection</div>
+                          <div>Oil Control</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="navbarMen">
+                <Link to="/" style={{textDecoration: 'none', color: '#818181'}}>
+              Natural
+              </Link>
+              <div className="navbarMenBlock">
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">CLEANSERS</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facewash</div>
+                        <div>Clensers</div>
+                        <div>Scrubs & Exfoliaters</div>
+                        <div>Facial Wipes</div>
+                        <div>Makeup Remover</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">
+                      Trending searches
+                    </div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Toners Under 1000</div>
+                        <div>Facewash For Oily Skin</div>
+                        <div>Oil Free face Moisturizers</div>
+                        <div>Lip Balm Under 500</div>
+                        <div>Vitamin C Serum</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts ">
+                    <div className="navbarMenProdHeading ">Moisturizers</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Moisturizer & Day</div>
+                        <div>Cream</div>
+                        <div>Night Cream</div>
+                        <div>Face Oils</div>
+                        <div>Serum & Essence</div>
+                        <div>BB & CC Creams</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts navbar-background">
+                    <div className="navbarMenProdHeading">Masks</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Masks & Peels</div>
+                        <div>Sheet Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">kts & combos</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facial Kits</div>
+                        <div>Combos@Nykka</div>
+                        <div>Gifts Sets</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Eye care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Under Eye Cream & Serums</div>
+                        <div>Dream Circles & Wrinkles</div>
+                        <div>Poffiness</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Makeup Removal</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Lip care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Lip Balm</div>
+                        <div>Lip Scrub</div>
+                        <div>Lip Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">neck creams</div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Body care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Body Butter</div>
+                        <div>Lotions & Creams</div>
+                        <div>Massage Oils</div>
+                        <div>Anti Strech mark Creams</div>
+                        <div>Anti Cellulite Creams</div>
+                        <div>Bath Salts</div>
+                        <div>Shower Gels & Body Wash </div>
+                        <div>Bath Scrubs</div>
+                        <div>Soaps</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Sun Care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Sunscreen</div>
+                        <div>Body Sunscreen</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">hands & Feet</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Hand Creams</div>
+                        <div>Foot Creams</div>
+                        <div>Hand & Foot masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Tops Brands</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>NYKKA SKINRX</div>
+                        <div>Innisfree</div>
+                        <div>L'oreal Paris</div>
+                        <div>Nykaa Naturals</div>
+                        <div>Neutrogena</div>
+                        <div>The Face Shop</div>
+                        <div>Nivea</div>
+                        <div>Mamaearth</div>
+                        <div>Plum</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className=".navbar-background">
+                    <div className="navbarMenProducts">
+                      <div className="navbarMenProdHeading">
+                        shop by concern
+                      </div>
+                      <div className="navbarMenProdHeadingList">
+                        <div className="navbarMenProdHeadingListHover">
+                          <div>Skin Brightening</div>
+                          <div>Acne Treatment</div>
+                          <div>Dull Skin Treatment</div>
+                          <div>Pigmentation</div>
+                          <div>Anti Ageing</div>
+                          <div>Tan Removal</div>
+                          <div>Face Treatment </div>
+                          <div>Pore Care</div>
+                          <div>skin Dryness</div>
+                          <div>Sun Protection</div>
+                          <div>Oil Control</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="navbarMen">
+                <Link to="/" style={{textDecoration: 'none', color: '#818181'}}>
+              Mom and Baby
+              </Link>
+              <div className="navbarMenBlock">
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">CLEANSERS</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facewash</div>
+                        <div>Clensers</div>
+                        <div>Scrubs & Exfoliaters</div>
+                        <div>Facial Wipes</div>
+                        <div>Makeup Remover</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">
+                      Trending searches
+                    </div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Toners Under 1000</div>
+                        <div>Facewash For Oily Skin</div>
+                        <div>Oil Free face Moisturizers</div>
+                        <div>Lip Balm Under 500</div>
+                        <div>Vitamin C Serum</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts ">
+                    <div className="navbarMenProdHeading ">Moisturizers</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Moisturizer & Day</div>
+                        <div>Cream</div>
+                        <div>Night Cream</div>
+                        <div>Face Oils</div>
+                        <div>Serum & Essence</div>
+                        <div>BB & CC Creams</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts navbar-background">
+                    <div className="navbarMenProdHeading">Masks</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Masks & Peels</div>
+                        <div>Sheet Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">kts & combos</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facial Kits</div>
+                        <div>Combos@Nykka</div>
+                        <div>Gifts Sets</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Eye care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Under Eye Cream & Serums</div>
+                        <div>Dream Circles & Wrinkles</div>
+                        <div>Poffiness</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Makeup Removal</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Lip care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Lip Balm</div>
+                        <div>Lip Scrub</div>
+                        <div>Lip Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">neck creams</div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Body care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Body Butter</div>
+                        <div>Lotions & Creams</div>
+                        <div>Massage Oils</div>
+                        <div>Anti Strech mark Creams</div>
+                        <div>Anti Cellulite Creams</div>
+                        <div>Bath Salts</div>
+                        <div>Shower Gels & Body Wash </div>
+                        <div>Bath Scrubs</div>
+                        <div>Soaps</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Sun Care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Sunscreen</div>
+                        <div>Body Sunscreen</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">hands & Feet</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Hand Creams</div>
+                        <div>Foot Creams</div>
+                        <div>Hand & Foot masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Tops Brands</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>NYKKA SKINRX</div>
+                        <div>Innisfree</div>
+                        <div>L'oreal Paris</div>
+                        <div>Nykaa Naturals</div>
+                        <div>Neutrogena</div>
+                        <div>The Face Shop</div>
+                        <div>Nivea</div>
+                        <div>Mamaearth</div>
+                        <div>Plum</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className=".navbar-background">
+                    <div className="navbarMenProducts">
+                      <div className="navbarMenProdHeading">
+                        shop by concern
+                      </div>
+                      <div className="navbarMenProdHeadingList">
+                        <div className="navbarMenProdHeadingListHover">
+                          <div>Skin Brightening</div>
+                          <div>Acne Treatment</div>
+                          <div>Dull Skin Treatment</div>
+                          <div>Pigmentation</div>
+                          <div>Anti Ageing</div>
+                          <div>Tan Removal</div>
+                          <div>Face Treatment </div>
+                          <div>Pore Care</div>
+                          <div>skin Dryness</div>
+                          <div>Sun Protection</div>
+                          <div>Oil Control</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="navbarMen">
+                <Link to="/" style={{textDecoration: 'none', color: '#818181'}}>
+              Men
+              </Link>
+              <div className="navbarMenBlock">
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">CLEANSERS</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facewash</div>
+                        <div>Clensers</div>
+                        <div>Scrubs & Exfoliaters</div>
+                        <div>Facial Wipes</div>
+                        <div>Makeup Remover</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">
+                      Trending searches
+                    </div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Toners Under 1000</div>
+                        <div>Facewash For Oily Skin</div>
+                        <div>Oil Free face Moisturizers</div>
+                        <div>Lip Balm Under 500</div>
+                        <div>Vitamin C Serum</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts ">
+                    <div className="navbarMenProdHeading ">Moisturizers</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Moisturizer & Day</div>
+                        <div>Cream</div>
+                        <div>Night Cream</div>
+                        <div>Face Oils</div>
+                        <div>Serum & Essence</div>
+                        <div>BB & CC Creams</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts navbar-background">
+                    <div className="navbarMenProdHeading">Masks</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Masks & Peels</div>
+                        <div>Sheet Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">kts & combos</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facial Kits</div>
+                        <div>Combos@Nykka</div>
+                        <div>Gifts Sets</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Eye care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Under Eye Cream & Serums</div>
+                        <div>Dream Circles & Wrinkles</div>
+                        <div>Poffiness</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Makeup Removal</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Lip care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Lip Balm</div>
+                        <div>Lip Scrub</div>
+                        <div>Lip Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">neck creams</div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Body care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Body Butter</div>
+                        <div>Lotions & Creams</div>
+                        <div>Massage Oils</div>
+                        <div>Anti Strech mark Creams</div>
+                        <div>Anti Cellulite Creams</div>
+                        <div>Bath Salts</div>
+                        <div>Shower Gels & Body Wash </div>
+                        <div>Bath Scrubs</div>
+                        <div>Soaps</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Sun Care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Sunscreen</div>
+                        <div>Body Sunscreen</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">hands & Feet</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Hand Creams</div>
+                        <div>Foot Creams</div>
+                        <div>Hand & Foot masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Tops Brands</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>NYKKA SKINRX</div>
+                        <div>Innisfree</div>
+                        <div>L'oreal Paris</div>
+                        <div>Nykaa Naturals</div>
+                        <div>Neutrogena</div>
+                        <div>The Face Shop</div>
+                        <div>Nivea</div>
+                        <div>Mamaearth</div>
+                        <div>Plum</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className=".navbar-background">
+                    <div className="navbarMenProducts">
+                      <div className="navbarMenProdHeading">
+                        shop by concern
+                      </div>
+                      <div className="navbarMenProdHeadingList">
+                        <div className="navbarMenProdHeadingListHover">
+                          <div>Skin Brightening</div>
+                          <div>Acne Treatment</div>
+                          <div>Dull Skin Treatment</div>
+                          <div>Pigmentation</div>
+                          <div>Anti Ageing</div>
+                          <div>Tan Removal</div>
+                          <div>Face Treatment </div>
+                          <div>Pore Care</div>
+                          <div>skin Dryness</div>
+                          <div>Sun Protection</div>
+                          <div>Oil Control</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="navbarMen">
+                <Link to="/" style={{textDecoration: 'none', color: '#818181'}}>
+              Fragrance
+              </Link>
+              <div className="navbarMenBlock">
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">CLEANSERS</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facewash</div>
+                        <div>Clensers</div>
+                        <div>Scrubs & Exfoliaters</div>
+                        <div>Facial Wipes</div>
+                        <div>Makeup Remover</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">
+                      Trending searches
+                    </div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Toners Under 1000</div>
+                        <div>Facewash For Oily Skin</div>
+                        <div>Oil Free face Moisturizers</div>
+                        <div>Lip Balm Under 500</div>
+                        <div>Vitamin C Serum</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts ">
+                    <div className="navbarMenProdHeading ">Moisturizers</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Moisturizer & Day</div>
+                        <div>Cream</div>
+                        <div>Night Cream</div>
+                        <div>Face Oils</div>
+                        <div>Serum & Essence</div>
+                        <div>BB & CC Creams</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts navbar-background">
+                    <div className="navbarMenProdHeading">Masks</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Masks & Peels</div>
+                        <div>Sheet Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">kts & combos</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facial Kits</div>
+                        <div>Combos@Nykka</div>
+                        <div>Gifts Sets</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Eye care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Under Eye Cream & Serums</div>
+                        <div>Dream Circles & Wrinkles</div>
+                        <div>Poffiness</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Makeup Removal</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Lip care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Lip Balm</div>
+                        <div>Lip Scrub</div>
+                        <div>Lip Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">neck creams</div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Body care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Body Butter</div>
+                        <div>Lotions & Creams</div>
+                        <div>Massage Oils</div>
+                        <div>Anti Strech mark Creams</div>
+                        <div>Anti Cellulite Creams</div>
+                        <div>Bath Salts</div>
+                        <div>Shower Gels & Body Wash </div>
+                        <div>Bath Scrubs</div>
+                        <div>Soaps</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Sun Care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Sunscreen</div>
+                        <div>Body Sunscreen</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">hands & Feet</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Hand Creams</div>
+                        <div>Foot Creams</div>
+                        <div>Hand & Foot masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Tops Brands</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>NYKKA SKINRX</div>
+                        <div>Innisfree</div>
+                        <div>L'oreal Paris</div>
+                        <div>Nykaa Naturals</div>
+                        <div>Neutrogena</div>
+                        <div>The Face Shop</div>
+                        <div>Nivea</div>
+                        <div>Mamaearth</div>
+                        <div>Plum</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className=".navbar-background">
+                    <div className="navbarMenProducts">
+                      <div className="navbarMenProdHeading">
+                        shop by concern
+                      </div>
+                      <div className="navbarMenProdHeadingList">
+                        <div className="navbarMenProdHeadingListHover">
+                          <div>Skin Brightening</div>
+                          <div>Acne Treatment</div>
+                          <div>Dull Skin Treatment</div>
+                          <div>Pigmentation</div>
+                          <div>Anti Ageing</div>
+                          <div>Tan Removal</div>
+                          <div>Face Treatment </div>
+                          <div>Pore Care</div>
+                          <div>skin Dryness</div>
+                          <div>Sun Protection</div>
+                          <div>Oil Control</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="navbarMen">
+                <Link to="/" style={{textDecoration: 'none', color: '#818181'}}>
+              Popups
+              </Link>
+              <div className="navbarMenBlock">
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">CLEANSERS</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facewash</div>
+                        <div>Clensers</div>
+                        <div>Scrubs & Exfoliaters</div>
+                        <div>Facial Wipes</div>
+                        <div>Makeup Remover</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">
+                      Trending searches
+                    </div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Toners Under 1000</div>
+                        <div>Facewash For Oily Skin</div>
+                        <div>Oil Free face Moisturizers</div>
+                        <div>Lip Balm Under 500</div>
+                        <div>Vitamin C Serum</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts ">
+                    <div className="navbarMenProdHeading ">Moisturizers</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Moisturizer & Day</div>
+                        <div>Cream</div>
+                        <div>Night Cream</div>
+                        <div>Face Oils</div>
+                        <div>Serum & Essence</div>
+                        <div>BB & CC Creams</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts navbar-background">
+                    <div className="navbarMenProdHeading">Masks</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Masks & Peels</div>
+                        <div>Sheet Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">kts & combos</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Facial Kits</div>
+                        <div>Combos@Nykka</div>
+                        <div>Gifts Sets</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Eye care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Under Eye Cream & Serums</div>
+                        <div>Dream Circles & Wrinkles</div>
+                        <div>Poffiness</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Masks</div>
+                        <div>Eye Makeup Removal</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Lip care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Lip Balm</div>
+                        <div>Lip Scrub</div>
+                        <div>Lip Masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">neck creams</div>
+                  </div>
+                </div>
+                <div className="navbar-background">
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Body care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Body Butter</div>
+                        <div>Lotions & Creams</div>
+                        <div>Massage Oils</div>
+                        <div>Anti Strech mark Creams</div>
+                        <div>Anti Cellulite Creams</div>
+                        <div>Bath Salts</div>
+                        <div>Shower Gels & Body Wash </div>
+                        <div>Bath Scrubs</div>
+                        <div>Soaps</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Sun Care</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Face Sunscreen</div>
+                        <div>Body Sunscreen</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">hands & Feet</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>Hand Creams</div>
+                        <div>Foot Creams</div>
+                        <div>Hand & Foot masks</div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="navbarprodHrLine"></hr>
+                  <div className="navbarMenProducts">
+                    <div className="navbarMenProdHeading">Tops Brands</div>
+                    <div className="navbarMenProdHeadingList">
+                      <div className="navbarMenProdHeadingListHover">
+                        <div>NYKKA SKINRX</div>
+                        <div>Innisfree</div>
+                        <div>L'oreal Paris</div>
+                        <div>Nykaa Naturals</div>
+                        <div>Neutrogena</div>
+                        <div>The Face Shop</div>
+                        <div>Nivea</div>
+                        <div>Mamaearth</div>
+                        <div>Plum</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className=".navbar-background">
+                    <div className="navbarMenProducts">
+                      <div className="navbarMenProdHeading">
+                        shop by concern
+                      </div>
+                      <div className="navbarMenProdHeadingList">
+                        <div className="navbarMenProdHeadingListHover">
+                          <div>Skin Brightening</div>
+                          <div>Acne Treatment</div>
+                          <div>Dull Skin Treatment</div>
+                          <div>Pigmentation</div>
+                          <div>Anti Ageing</div>
+                          <div>Tan Removal</div>
+                          <div>Face Treatment </div>
+                          <div>Pore Care</div>
+                          <div>skin Dryness</div>
+                          <div>Sun Protection</div>
+                          <div>Oil Control</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <Link to="/hair" style={{textDecoration: "none", color: '#818181'}}>
             <li>Hair</li>
             </Link>
             <li>Appliances</li>
@@ -257,7 +1697,7 @@ const Navbar = () => {
             <li>Mom & Baby</li>
             <li>Men</li>
             <li>Fragrance</li>
-            <li>Luxe</li>
+            <li>Luxe</li> */}
             <div className="offer"> OFFERS</div>
           </ul>
         </div>
