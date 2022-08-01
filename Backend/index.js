@@ -19,6 +19,7 @@ app.use((req,res,next) => {
 app.use(Auth)
 app.use(productRouter);
 app.use(orderRouter);
+app.use(addressRouter);
 
 connectDB().then(() => {
     app.listen(8080, () => {
