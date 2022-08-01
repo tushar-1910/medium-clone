@@ -20,9 +20,14 @@ export const ProductDescription=()=>{
 
 
     console.log("checking product data",proddata);
+
     const handlecart=()=>{
-      fetch(`http://localhost:8080/orders`,{
+      let dummydata={
+         quantity:1,
+         ordertotal:500      }
+      fetch(`http://localhost:8080/${productId}`,{
          method:"POST",
+         body:JSON.stringify(dummydata),
          headers:{
             "Content-Type":"application/json",
             "token":localStorage.getItem("token")

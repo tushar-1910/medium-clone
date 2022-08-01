@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-async function connectDatabase() {
+async function connectDB() {
     const dbUri = "mongodb://localhost:27017/nykaa"
 
     try {
@@ -12,4 +12,4 @@ async function connectDatabase() {
     }
 }
 
-module.exports = connectDatabase;
+module.exports = connectDB;
