@@ -15,7 +15,7 @@ export const Api_Url = "http://localhost:8080"
 function App() {
   return (
     <div className="App">
-      <Home />
+      {/* <Home /> */}
       <Routes>
         <Route path='/' element={< Homepage />}></Route>
         <Route path='/auth' element={<Auth />}></Route>
