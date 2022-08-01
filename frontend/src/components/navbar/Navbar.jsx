@@ -5,8 +5,7 @@ import "./navbar.css";
 import "./homenavbar.css";
 import { AuthCom } from '../../authComponents/authCom';
 import CartNavbar from '../Cart/navbar/CartNavbar';
-import { Nav1 } from '../Cart/navbar/Nav1';
-import { Nav2 } from '../Cart/navbar/Nav2';
+
 
 const Navbar = () => {
   // const [burgerStatus, setBurgerStatus] = React.useState(true);

@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 // import styled from 'styled-components'
 import './address.css'
+import { useNavigate } from 'react-router-dom';
 // import axios from 'axios'
 
 
@@ -13,7 +14,7 @@ export default function MultilineTextFields() {
   number:"",
   address:""
   });
-
+  const navigate = useNavigate();
 
   const handleChange = (e) =>{
     const {name,value} = e.target;
@@ -31,7 +32,7 @@ const addressChange = async (e)=>{
   console.log(addressData)
   if (address && name && number){
    
-  let res = await fetch("http://localhost:9000/address",{
+  let res = await fetch("http://localhost:8080/address",{
     method:"POST",
     body:JSON.stringify(addressData),
     headers:{
@@ -41,6 +42,7 @@ const addressChange = async (e)=>{
   })
   let data =await res.json();
   console.log(data);
+  navigate("/payment")
   
   alert("posted")
    }

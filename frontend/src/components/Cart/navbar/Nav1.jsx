@@ -213,7 +213,9 @@ const {showBag,handleshowBag}=useContext(Contexts)
     setCartProducts(data);
   }
   useEffect(() => {
+    if(showBag){
     getCart();
+    }
   }
   ,[cartProducts]);
   let price = 0;
