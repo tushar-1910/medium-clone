@@ -4,11 +4,16 @@ import {shoppingBag} from '../Shopping_bag/Shopping_bag';
 import "./navbar.css";
 import "./homenavbar.css";
 import { AuthCom } from '../../authComponents/authCom';
+import CartNavbar from '../Cart/navbar/CartNavbar';
+import { Nav1 } from '../Cart/navbar/Nav1';
+import { Nav2 } from '../Cart/navbar/Nav2';
+
 const Navbar = () => {
   // const [burgerStatus, setBurgerStatus] = React.useState(true);
   const [showResults, setShowResults] = React.useState(false)
   return (
     <>
+        <CartNavbar/>
      <div className="main-navbar">
         <div className="upper-navbar">
           <p className="top-p">
@@ -35,6 +40,7 @@ const Navbar = () => {
           <p className="get-app">Help</p>
         </div>
         <ul className="nykka-navbar">
+
           <Link to="/">
           <li>
             <img className="nykka" src="/nykka.svg" />
@@ -60,11 +66,8 @@ const Navbar = () => {
           </li> */}
           {/* <p className="account">ACCOUNT</p> */}
           <AuthCom />
-          <Link to="/login" style={{textDecoration: "none"}}>
-          <div className="usercart">
-            <img className="usercart2" src="/usercart.svg" onClick={(e)=>setShowResults(true)}/>
-          </div>
-          </Link>
+          {/* <Nav1/>
+          <Nav2/> */}
         </ul>
         <div className="lower-nav">
           <ul>

@@ -10,7 +10,7 @@ import { AuthReg } from './authComponents/authReg';
 import { AuthLog } from './authComponents/authLogin';
 import {Home} from './components/home/Home';
 import { Homepage } from './components/Homepage/Homepage';
-
+// import  CartNavbar  from './components/Cart/navbar/CartNavbar';
 
 export const Api_Url = "http://localhost:8080"
 
@@ -18,6 +18,7 @@ export const Api_Url = "http://localhost:8080"
 function App() {
   return (
     <div className="App">
+      {/* <CartNavbar/> */}
       <Home />
       <Routes>
         <Route path='/' element={< Homepage />}></Route>

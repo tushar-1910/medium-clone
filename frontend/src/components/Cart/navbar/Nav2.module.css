@@ -1,0 +1,113 @@
+* {
+  font-family: Inter, sans-serif;
+}
+/* Main Nav */
+.nav {
+  display: flex;
+  border-bottom: 1px solid #e6dede;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  background-color: white;
+}
+
+/* Navbar Dropdown Link */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  /* padding: 100px; */
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropbtn {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #03021a;
+  margin: 0 auto;
+}
+
+.noDrop {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #03021a;
+}
+.dropdownContent .content {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+.dropdown:hover .dropdownContent {
+  display: flex;
+  margin: auto;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #fc2779;
+}
+
+/* Search */
+.search{
+  /* border: 2px solid red; */
+ /* margin: auto; */
+}
+.searchDiv {
+  border-radius: 5px;
+  width: 250px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  background-color: #eceaebce;
+}
+.searchItems {
+  width: 100%;
+  /* position: relative; */
+  /* margin-top: 100px; */
+  /* border: 2px solid black; */
+}
+h4 {
+  color: black;
+}
+/* Account */
+.acc {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 76px;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+/* Bag */
+.btn {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  display: inline;
+  max-width: 76px;
+  vertical-align: bottom;
+  cursor: pointer;
+  margin-left: 1300px;
+  /* margin-top: -10px; */
+
+}
+
+/* Media Queries */
+@media only screen and (max-width: 843px) {
+  .nav {
+    column-gap: 2px;
+    display: grid;
+  }
+}

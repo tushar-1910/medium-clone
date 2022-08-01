@@ -1,12 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Contexts } from "../contexts/Contexts";
 import "./productdesc.css";
 
 
 export const ProductDescription=()=>{
     const [proddata,setProddata]=useState();
     const {productId}=useParams();
+    const {handleshowBag} = useContext(Contexts)
     
    const getProductById=async()=>{
         fetch(`http://localhost:8080/products/${productId}`)
@@ -24,8 +26,9 @@ export const ProductDescription=()=>{
     const handlecart=()=>{
       let dummydata={
          quantity:1,
-         ordertotal:500      }
-      fetch(`http://localhost:8080/${productId}`,{
+         ordertotal:500      
+      }
+      fetch(`http://localhost:8080/createOrder/${productId}`,{
          method:"POST",
          body:JSON.stringify(dummydata),
          headers:{
@@ -36,7 +39,7 @@ export const ProductDescription=()=>{
       .then((res)=>res.json())
       .then((response)=>{
          console.log(response);
-         alert("Item added to bag...")
+         handleshowBag();
       });
     }
     if(proddata){
