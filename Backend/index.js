@@ -4,7 +4,7 @@ const  connectDB  = require('./Database');
 const orderRouter = require('./Routes/orders');
 const Auth = require('./Routes/users');
 const productRouter = require('./Routes/products');
-
+const addressRouter = require('./Routes/address');
 
 const app = express();
 app.use(cors());
