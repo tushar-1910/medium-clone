@@ -225,6 +225,7 @@ const {showBag,handleshowBag}=useContext(Contexts)
       off_price +=  +item.product.price * +item.quantity;
     }
     discont += price - off_price;
+    localStorage.setItem("price",price);
   return (
     <div>
        {showBag && (
