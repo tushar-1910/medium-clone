@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const { connectDB } = require('./Database');
-// const orderRouter = require('./Routes/orders');
+const orderRouter = require('./Routes/orders');
 const Auth = require('./Routes/users');
 
 
@@ -14,7 +14,7 @@ app.use((req,res,next) => {
     next();
 });
 
-// app.use(orderRouter);
+app.use(orderRouter);
 app.use(Auth)
 
 connectDB().then(() => {
