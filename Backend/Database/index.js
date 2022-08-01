@@ -1,13 +1,15 @@
 const mongoose = require('mongoose');
 
 async function connectDB() {
-  try {
-    await mongoose.connect(`mongodb://localhost:27017/nykaa`, {
-    });
-    console.log('MongoDB connected');
-  } catch (error) {
-    console.log(error);
-  }
+    const dbUri = "mongodb://localhost:27017/nykaa"
+
+    try {
+        await mongoose.connect(dbUri)
+        console.log('Connected to Database');
+    } catch (error) {
+        console.log('Error connecting to database')
+        throw error
+    }
 }
 
-module.exports = {connectDB}
+module.exports = connectDB;

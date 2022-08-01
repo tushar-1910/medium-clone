@@ -1,8 +1,9 @@
 const express = require('express');
 const cors = require('cors');
-const { connectDB } = require('./Database');
+const  connectDB  = require('./Database');
 const orderRouter = require('./Routes/orders');
 const Auth = require('./Routes/users');
+const productRouter = require('./Routes/products');
 
 
 const app = express();
@@ -14,10 +15,12 @@ app.use((req,res,next) => {
     next();
 });
 
-app.use(orderRouter);
+// app.use(orderRouter);
 app.use(Auth)
+app.use(productRouter);
 
 connectDB().then(() => {
     app.listen(8080, () => {
         console.log('Server started on port 8080');
 });});
+

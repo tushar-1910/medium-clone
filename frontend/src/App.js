@@ -1,5 +1,8 @@
 import React from 'react';
-import './App.css';
+//import './App.css';
+import { Haircare } from './components/haircare';
+import { Moisturizers } from './components/moisturizers';
+import { ProductDescription } from './components/productdesc';
 import { Routes, Route } from "react-router-dom"
 import { Auth } from './authComponents/auth';
 import { AuthVerify } from './authComponents/authVerify';
@@ -22,6 +25,9 @@ function App() {
         <Route path='/auth/verify' element={<AuthVerify />}></Route>
         <Route path='/auth/register' element={ <AuthReg />  }></Route>
         <Route path='/auth/login' element={ <AuthLog /> }></Route>
+        <Route path="/Moisturizers" element={<Moisturizers />} ></Route>
+        <Route path="/productdesc/:productId" element={<ProductDescription />} ></Route>
+        <Route path="/haircare" element={<Haircare />} ></Route>
         </Routes>
     </div>
   );

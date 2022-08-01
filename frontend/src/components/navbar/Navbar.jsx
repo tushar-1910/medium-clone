@@ -71,7 +71,7 @@ const Navbar = () => {
             <li>Make up</li>
 
             <div className="navbarMen">
-                <Link to="skin" style={{textDecoration: 'none', color: '#818181'}}>
+                <Link to="/Moisturizers" style={{textDecoration: 'none', color: '#818181'}}>
               Skin
               </Link>
               <div className="navbarMenBlock">
