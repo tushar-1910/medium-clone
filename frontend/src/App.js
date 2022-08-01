@@ -9,7 +9,7 @@ import { AuthCom } from './authComponents/authCom';
 
 export const Api_Url = "http://localhost:8080"
 
-export function App() {
+function App() {
   return (
     <div className="App">
       <Routes>
@@ -22,4 +22,6 @@ export function App() {
     </div>
   );
 }
+
+export default App
 
