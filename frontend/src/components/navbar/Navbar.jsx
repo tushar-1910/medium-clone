@@ -3,6 +3,7 @@ import {Link } from "react-router-dom";
 import {shoppingBag} from '../Shopping_bag/Shopping_bag';
 import "./navbar.css";
 import "./homenavbar.css";
+import { AuthCom } from '../../authComponents/authCom';
 const Navbar = () => {
   // const [burgerStatus, setBurgerStatus] = React.useState(true);
   const [showResults, setShowResults] = React.useState(false)
@@ -54,10 +55,11 @@ const Navbar = () => {
           <li>
             <img src="/wishlist.svg" />
           </li>
-          <li>
+          {/* <li>
             <img src="/profile.svg" />
-          </li>
-          <p className="account">ACCOUNT</p>
+          </li> */}
+          {/* <p className="account">ACCOUNT</p> */}
+          <AuthCom />
           <Link to="/login" style={{textDecoration: "none"}}>
           <div className="usercart">
             <img className="usercart2" src="/usercart.svg" onClick={(e)=>setShowResults(true)}/>
