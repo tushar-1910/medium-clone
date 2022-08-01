@@ -14,7 +14,7 @@ app.use((req,res,next) => {
     next();
 });
 
-// app.use(orderRouter);
+app.use(orderRouter);
 app.use(Auth)
 
 connectDB().then(() => {
