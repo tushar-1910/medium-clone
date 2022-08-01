@@ -4,6 +4,7 @@ import { Auth } from './authComponents/auth';
 import { AuthVerify } from './authComponents/authVerify';
 import { AuthReg } from './authComponents/authReg';
 import { AuthLog } from './authComponents/authLogin';
+import { AuthCom } from './authComponents/authCom';
 
 
 export const Api_Url = "http://localhost:8080"
@@ -12,6 +13,7 @@ export function App() {
   return (
     <div className="App">
       <Routes>
+        <Route path='/' element={<AuthCom />}></Route>
         <Route path='/auth' element={<Auth />}></Route>
         <Route path='/auth/verify' element={<AuthVerify />}></Route>
         <Route path='/auth/register' element={ <AuthReg />  }></Route>

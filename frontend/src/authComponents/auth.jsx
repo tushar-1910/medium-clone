@@ -6,11 +6,12 @@ import { theme } from "./theme";
 import { useNavigate } from "react-router-dom";
 import { gapi } from "gapi-script"
 import SocialButton from "./SocialButton";
+import {FcGoogle} from "react-icons/fc"
+import { Api_Url } from "../App";
 
 
 // {"web":{"client_id":"918616545429-9bg6ehmr9mce8o2fss6mhmafvc6vl5k4.apps.googleusercontent.com","project_id":"nykaa-clone-358007","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"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","redirect_uris":["http://localhost:3000/auth","http://localhost:3000/auth/login"],"javascript_origins":["http://localhost:3000"]}}
-
-const Client_ID = "918616545429-9bg6ehmr9mce8o2fss6mhmafvc6vl5k4.apps.googleusercontent.com"
+export const Client_ID = "918616545429-9bg6ehmr9mce8o2fss6mhmafvc6vl5k4.apps.googleusercontent.com"
 
 export const Auth = () => {
 
@@ -20,13 +21,75 @@ export const Auth = () => {
         navigate("/auth/verify")
     }
 
+    async function GoogleRegister(userDetails){
+
+        try {
+
+            const ReqDataBody = {
+                "first_name": userDetails.profile.firstName,
+                "last_name": userDetails.profile.lastName,
+                "email": userDetails.profile.email,
+                "password":"randompasswordforgooglelogin"
+            }
+
+            const response = await fetch(`${Api_Url}/auth/register`,{
+                method:"POST",
+                headers:{
+                    "Content-Type" : "application/json"
+                },
+                body: JSON.stringify({"ReqDataBody": ReqDataBody})
+            })
+
+            if(response.status === 201){
+                GoogleLogin(userDetails)
+            }
+            
+        } catch (error) {
+            return error
+        }
+    }
+
+    async function GoogleLogin(userDetails){
+
+        try {
+            const response = await fetch(`${Api_Url}/auth/login`,{
+                method: "POST",
+                headers:{
+                    "Content-Type" : "application/json"
+                },
+                body: JSON.stringify({
+                    "input": userDetails.profile.email,
+                    "password": "randompasswordforgooglelogin"
+                })
+            })
+
+            const ResData = await response.json()
+            
+            if(response.status === 202){
+                localStorage.setItem("token", ResData.encryptionToken)
+                navigate("/")
+            }
+            
+        } catch (error) {
+            return null
+        }
+    }
+
     const handleSocialLogin = (user) => {
-        console.log(user);
-      };
+        
+        GoogleLogin(user)
+        .then((res) => {
+            if(res === null){
+                localStorage.setItem("token","")
+                GoogleRegister(user)
+            }
+        })
+        .catch((err) => {return err})
+    };
       
-      const handleSocialLoginFailure = (err) => {
+    const handleSocialLoginFailure = (err) => {
         console.error(err);
-      };
+    };
 
 
 
@@ -64,8 +127,10 @@ export const Auth = () => {
                 appId={Client_ID}
                 onLoginSuccess={handleSocialLogin}
                 onLoginFailure={handleSocialLoginFailure}
+                className="googleButton"
             >
-                Login with Google
+                <FcGoogle size={25} style={{marginRight:"8px"}} />
+                Google
             </SocialButton>
 
             {/* eslint-disable-next-line */}

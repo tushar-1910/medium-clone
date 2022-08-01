@@ -13,7 +13,7 @@ export const AuthReg = () => {
             
             <Box sx={{display:"flex", alignItems:'center', justfyContent:"center", margin:0}}>
             <GrClose size={20} />
-            <h4 className="logReg">Register</h4>
+            <h4 className="logReg" style={{marginRight:"30px"}}>Register</h4>
             </Box>
 
             <hr/>

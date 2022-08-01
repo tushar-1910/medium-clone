@@ -41,14 +41,14 @@ async function figAuth(req,res){
 }
 
 async function AuthReq(req,res){
-    const {first_name, last_name, phone_number, email, password} = req.body
+    const { ReqDataBody } = req.body
 
     const data = {
-        first_name: first_name,
-        last_name: last_name,
-        phone_number: phone_number,
-        email: email,
-        password: password
+        first_name: ReqDataBody.first_name,
+        last_name: ReqDataBody.last_name,
+        phone_number: ReqDataBody.phone_number,
+        email: ReqDataBody.email,
+        password: ReqDataBody.password
     }
 
     try {
@@ -74,7 +74,8 @@ async function AuthLog(req,res){
                 if(existingNumber.password === password){
 
                     let encryptionToken = jwt.sign({
-                        id: existingNumber._id
+                        id: existingNumber._id,
+                        first_name: existingNumber.first_name
                     }, SECRET)
                     
                     res.status(202).send(JSON.stringify(encryptionToken))
@@ -97,10 +98,11 @@ async function AuthLog(req,res){
         try {
             if(existingEmail){
                 
-                if(existingEmail.password === password){
+                if(existingEmail.password === password ){
 
                     let encryptionToken = jwt.sign({
-                        id: existingEmail._id
+                        id: existingEmail._id,
+                        first_name: existingEmail.first_name
                     }, SECRET)
 
                     return res.status(202).send({encryptionToken})

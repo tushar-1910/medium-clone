@@ -11,8 +11,7 @@ const AuthModel = new mongoose.Schema({
         requried: true
     },
     phone_number:{
-        type: Number,
-        required: true
+        type: Number
     },
     email:{
         type: String,
