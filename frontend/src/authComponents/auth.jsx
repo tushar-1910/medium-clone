@@ -113,7 +113,7 @@ export const Auth = () => {
         <Box id="auth" className="container">
 
             <GrClose size={20} />
-            <h1 style={{fontSize:"36px", marginBottom:"0px"}}>Sign in</h1>
+            <h1 style={{fontSize:"36px", marginBottom:"0px", marginTop:"10px"}}>Sign in</h1>
             <p className="text">To quickly find your favourites items, save addresses and payments.</p>
             <hr/>
             <p className="text">Register and earn 2000 reward points</p>

@@ -116,7 +116,7 @@ export const AuthLog = () => {
             </Box>
 
             <Box className="centerDiv">
-            <p style={{margin:0, marginTop:"50px"}}>Welcome Back</p>
+            <p style={{margin:0, marginTop:"50px"}}>Welcome Back...</p>
             <p style={{margin:0}}>Please enter your password to continue</p>
 
             <TextField
