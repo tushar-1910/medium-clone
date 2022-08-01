@@ -1,0 +1,513 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  Roboto, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    background-color: rgb(243, 243, 243);
+}
+
+.css-proddescwrapper{
+    max-width: 1200px !important;
+    width: 90%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.css-proddescH{
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+}
+.css-proddescH1{
+    display: flex;
+   -moz-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+}
+.css-proddescH1 .name{
+    color: rgb(136, 136, 136);
+    padding: 0px 5px;
+    text-decoration: initial;
+    background-color: transparent;
+}
+.css-proddescH1 .arrow{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+    color: rgb(136, 136, 136);
+}
+.mainprodwrapper{
+    display: flex;
+    max-width: 1200px !important;
+    min-height: 450px;
+    margin-bottom: 0.75rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 3px 0 rgb(0 0 0 / 10%);
+}
+.mpwleft{
+    position: relative;
+    border-right: 1px solid rgba(101,119,134,0.22);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+.hearticon{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    align-self: flex-end;
+}
+.hearticon>button{
+    width: auto;
+    height: auto;
+    border: none;
+}
+.hearticonbtn{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color:white ;
+    background: #FFFFFF;
+    display: flex;
+    cursor: pointer;
+   -webkit-box-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   align-items: center;
+}
+.hearticon>i{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+}
+.fa-heart{
+    color: transparent;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: #fc2779;
+}
+.imageWrapper{
+    display: flex;
+}
+.imageWrapperleft{
+    -webkit-box-align: center;
+    -webkit-box-pack: start;
+    height: 330px;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+}
+.imageWrapperright{
+    position: relative;
+    margin-left: 1.5rem;
+}
+.imageWrapperright1{
+    max-width: 320px;
+    height: 100%;
+}
+.imageWrapperright11{
+    cursor: crosshair;
+    width: auto;
+    height: auto;
+   font-size: 0px;
+   position: relative;
+   -webkit-user-select: none;
+}
+.imageWrapperright11 img{
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+    max-width: 100%;
+    border: 0;
+}
+.mpwright1{
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    background: #FFFFFF;
+}
+.mpwright11{
+    margin-left: 0.75rem;
+}
+.mpwright11>h1{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    color: #001325;
+    padding-bottom: 0.25rem;
+}
+.rating-section{
+    padding: 0.5rem 0;
+    color: #001325;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.starimage{
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
+    border-right: 1px solid rgba(101,119,134,0.12);
+    display: flex;
+    cursor: pointer;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.ratingAndReview{
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
+    border-right: 1px solid rgba(101,119,134,0.12);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    height:25px
+}
+.mrpsection{
+    display:flex;
+}
+.mrpsection1{
+    display: inline-flex !important;
+    line-height: 20px;
+    margin-bottom: 0.75rem;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.css-MrpCutoff{
+    margin-right: 0.25rem;
+    color: rgba(0,19,37,0.64);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+}
+.css-MrpCutoff>span{
+    text-decoration-line: line-through;
+    padding-left: 0.25rem;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+}
+
+.css-mrp{
+    color: #001325;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+}
+.prodOffer{
+    color: #008945;
+    margin-left: 4px;
+    padding-left: 4px;
+    border-left: 1px solid #eeeeee;
+    font-size: 16px;
+    font-weight: 500;
+   line-height: 24px;
+   letter-spacing: -0.1px;
+}
+.css-mainprice{
+    margin-right: 0.25rem;
+    color: rgba(0,19,37,0.64);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+}
+.taxtag{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    padding-bottom: 0.75rem;
+    color: rgba(0,19,37,0.64);
+    margin-top: -0.5rem;
+}
+.product-offer-section{
+    background-color: rgba(101, 119, 134, 0.12);
+    border-radius: 2px;
+    color: rgba(0, 19, 37, 0.92);
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+    max-width: 92%;
+}
+.offertag{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    padding-left: 0.75rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+}
+.moreOfferbtn{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    margin-left: 0.75rem;
+    color: rgb(252, 39, 121);
+    border: medium none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.quantity-wrapper{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    padding: 0.25rem 0.5rem 0;
+    color: rgba(0,19,37,0.92);
+}
+.quantity-wapper1{
+    display:flex;
+    flex-direction:row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 504px;
+}
+.qwselectbox{
+    display: inline-block;
+    vertical-align: bottom;
+    color: rgba(0,19,37,0.92);
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.qwselectsize{
+    color: rgba(0,19,37,0.92);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    padding: 7px 24px 7px 2px;
+    position: relative;
+    width: auto;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    z-index: 2;
+}
+.qwselectbox::after{
+    content: "❯";
+    position: absolute;
+    transform: rotate( 90deg );
+    right: 8px;
+    top: 5px;
+    color: #fc2779;
+}
+.quantity-buttonwrapper{
+    padding: 1rem 0 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    max-width: 600px;
+}
+.qwbtn1{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    margin: 0 0.25rem 0.5rem 0;
+}
+.qwbtn11{
+    background: rgba(0,19,37,0.82);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,19,37,0.52);
+    border-radius: 15px;
+    padding: 0.25rem 0.75rem;
+    margin-right: 0.25rem;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+.qwbtn12{
+    background: #FFFFFF;
+    color: rgba(0,19,37,0.82);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,19,37,0.52);
+    border-radius: 15px;
+    padding: 0.25rem 0.75rem;
+    margin-right: 0.25rem;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+.css-cartboxWrapper{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 2.5rem;
+    width: 100%;
+    min-height: 130px;
+}
+.css-cbw1{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 40%;
+    border-right: 1px solid rgba(101,119,134,0.22);
+    min-width: 237px;
+    padding-right: 0.5rem;
+    height: 138px;
+}
+.css-cbw11{
+    width: 222px;
+    height: 48px;
+    align-self: center;
+}
+.css-cbwbtn{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    width: 100%;
+    background: #fc2779;
+    color: #FFFFFF;
+    height: 100%;
+    display: flex;
+   -webkit-box-pack: center;
+    justify-content: center;
+   -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+.css-cbwbtn-text{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+.pincodeWrapper{
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+}
+.pincodeWrapper1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+}
+.pincodeWrapper11{
+    display: flex;
+   -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.deliverytag{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: rgba(0,19,37,0.72);
+    margin-left: 0.25rem;
+}
+.fa-location-dot{
+    color: transparent;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: rgba(0,19,37,0.72);
+}
+.pincodeWrapper12{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(101,119,134,0.22);
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 2px;
+    max-width: 270px;
+    padding: 0 0.5rem; 
+}
+.pinbox{
+    display: flex;
+    flex-direction: column;
+   -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+.pininput{
+    border: none;
+    padding: 0.5rem 0;
+    box-shadow: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    max-width: 180px;
+    overflow: visible;
+}
+.pincheck{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    color: #fc2779;
+    cursor: pointer;
+}
+.pdf{
+    line-height: 16px;
+    border-top: 1px solid rgba(101,119,134,0.16);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+}
+
+

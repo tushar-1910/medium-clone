@@ -1,14 +1,15 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
-async function connectResponse(){
-    const dbUrl = "mongodb://localhost:27017/address"
-    // const dbUri = "mongodb://localhost:27017/getmeip"
-    try{
-    const response=await mongoose.connect(dbUrl)
-    console.log('success')
-    }catch(ex){
-        console.log("error",ex.message)
+async function connectDB() {
+    const dbUri = "mongodb://localhost:27017/nykaa"
+
+    try {
+        await mongoose.connect(dbUri)
+        console.log('Connected to Database');
+    } catch (error) {
+        console.log('Error connecting to database')
+        throw error
     }
-
 }
-module.exports=connectResponse;
+
+module.exports = connectDB;
