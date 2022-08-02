@@ -10,6 +10,7 @@ import { AuthReg } from './authComponents/authReg';
 import { AuthLog } from './authComponents/authLogin';
 import {Home} from './components/home/Home';
 import { Homepage } from './components/Homepage/Homepage';
+import { Footer } from './components/footer/Footer';
 
 
 export const Api_Url = "http://localhost:8080"
@@ -29,6 +30,7 @@ function App() {
         <Route path="/productdesc/:productId" element={<ProductDescription />} ></Route>
         <Route path="/haircare" element={<Haircare />} ></Route>
         </Routes>
+        <Footer />
     </div>
   );
 }

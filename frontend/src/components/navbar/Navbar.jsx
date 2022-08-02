@@ -8,7 +8,6 @@ const Navbar = () => {
   // const [burgerStatus, setBurgerStatus] = React.useState(true);
   const [showResults, setShowResults] = React.useState(false)
   return (
-    <>
      <div className="main-navbar">
         <div className="upper-navbar">
           <p className="top-p">
@@ -251,7 +250,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="navbarMen">
-                <Link to="hair" style={{textDecoration: 'none', color: '#818181'}}>
+                <Link to="/haircare" style={{textDecoration: 'none', color: '#818181'}}>
               Hair
               </Link>
               <div className="navbarMenBlock">
@@ -1704,7 +1703,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </>
+    
   );
 };
 export { Navbar };
