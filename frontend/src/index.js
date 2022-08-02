@@ -5,16 +5,17 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from "react-redux"
 import { store } from './redux/store';
-
-import { BrowserRouter as Router} from 'react-router-dom';
+import { ContextsProvider } from './contexts/Contexts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <ContextsProvider>
     <Provider store={ store }>
     <BrowserRouter>
     <App />
     </BrowserRouter>
     </Provider>
+  </ContextsProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,6 +1,5 @@
 import {React} from 'react'
 import "./footer.css"
-// import {MediaCard} from "../Homepage/SliderDown1"
 
  const Footer = () => {
     return (
