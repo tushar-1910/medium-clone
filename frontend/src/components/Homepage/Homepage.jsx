@@ -7,11 +7,14 @@ import Steals from './steal-img.png'
 
 // import { Carousel1 } from './Carousel'
 import './Homepage.css'
+import { Home } from '../home/Home';
+import { Footer } from '../footer/Footer';
 // import images from './images'
 
 function Homepage(){
 return(
     <>
+    <Home />
     {/* <h2>this is my home page</h2> */}
     <img className='first-img1' src = "https://images-static.nykaa.com/uploads/c758ab69-2581-44a6-bcc2-b8e90fb5db13.gif?tr=w-1200,cm-pad_resize" alt = "" />
    {/* <div><Carousel1 /></div> */}
@@ -193,6 +196,7 @@ return(
   
   <img src = "https://images-static.nykaa.com/uploads/6eb33855-69a0-4979-92d8-a94ed8185f9e.png?tr=w-1200,cm-pad_resize" alt = ""/>
    
+   <Footer />
     </>
 )
 }
