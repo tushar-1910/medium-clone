@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import   "./moisturizers.css";
 import { useRef } from "react";
+import { Home } from "./home/Home";
 
 
 
@@ -454,6 +455,7 @@ export const Moisturizers=()=>{
     if(moistdata){
       return (
         <div className="moistCont1">
+          <Home />
             <div className="moistCont11">
               <div className="moistCont111">
                 <ul className="cssR1">
