@@ -191,18 +191,18 @@ const Div = styled.div`
 `;
 
 export const Nav1 = () => {
-const {showBag,handleshowBag}=useContext(Contexts)
+  const { showBag, handleshowBag } = useContext(Contexts)
   let body = document.querySelector("body");
 
   if (showBag) {
-      body.setAttribute("style", "overflow: hidden");
+    body.setAttribute("style", "overflow: hidden");
   } else {
-      body.setAttribute("style", "overflow: scroll");
+    body.setAttribute("style", "overflow: scroll");
   }
-  let [cartProducts,setCartProducts] = useState([]);
   let token = localStorage.getItem("token");
+  let [cartProducts, setCartProducts] = useState([]);
   const getCart = async () => {
-    const res = await fetch("https://nykaa-web-app-backend.herokuapp.com/getOrder",{
+    const res = await fetch("https://nykaa-web-app-backend.herokuapp.com/getOrder", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -213,78 +213,83 @@ const {showBag,handleshowBag}=useContext(Contexts)
     setCartProducts(data);
   }
   useEffect(() => {
-    getCart();
-  },[]);
-let price = 0;
+    getCart().then(()=>{cartTotal()})
+
+  }, []);
+
+  let price = 0;
   let discont = 0;
   let off_price = 0;
-  for (let item of cartProducts) {
+  const cartTotal = () => {
+    for (let item of cartProducts) {
       price += +item.product.mrp * +item.quantity;
-    
-      off_price +=  +item.product.price * +item.quantity;
+
+      off_price += +item.product.price * +item.quantity;
     }
     discont += price - off_price;
-    localStorage.setItem("price",price);
+    localStorage.setItem("price", price);
+  }
+
   return (
     <div>
-       {showBag && (
-                <Div>
-                    <div className="transparent"></div>
-                    <div className="display">
-                        <header>
-                            <button onClick={handleshowBag}>❮</button>
-                            <button>
-                                Shopping Bag 
-                            </button>
-                        </header>
-                        <div>
-                        <Cart />
-                            <div className="total_price">
-                                <div>Payment Details</div>
-                                <div>
-                                    <p>
-                                        <span>Bag Total</span>
-                                        <span>₹{price}</span>
-                                    </p>
-                                    <p>
-                                        <span>Bag Discount</span>
-                                        <span>-₹{discont}</span>
-                                    </p>
-                                    <p>
-                                        <span>Sub Total</span>
-                                        <span>₹{off_price}</span>
-                                    </p>
-                                    <p>
-                                        <span>Shipping Charge</span>
-                                        <span>🛈 Free</span>
-                                    </p>
-                                    <h3>
-                                        <span>Grand Total</span>
-                                        <span>₹{off_price}</span>
-                                    </h3>
-                                </div>
-                                <div>
-                                    <input
-                                        type="text"
-                                        placeholder="Have a coupon?"
-                                    />
-                                 <button>Views Coupon</button> 
-                                    <div></div>
-                                </div>
-                            </div>
-                        </div>
-                        <footer>
-                            <button>
-                                <p>Grand Total:</p>
-                                <p>₹{off_price}</p>
-                            </button>
-                            <button ><Link style={{textDecoration:"none",color:"white"}}  to="/address">
-                                Procced ❯
-                                </Link></button> 
-                        </footer>
-                    </div>
-                </Div>
-            )}
+      {showBag && (
+        <Div>
+          <div className="transparent"></div>
+          <div className="display">
+            <header>
+              <button onClick={handleshowBag}>❮</button>
+              <button>
+                Shopping Bag
+              </button>
+            </header>
+            <div>
+              <Cart />
+              <div className="total_price">
+                <div>Payment Details</div>
+                <div>
+                  <p>
+                    <span>Bag Total</span>
+                    <span>₹{price}</span>
+                  </p>
+                  <p>
+                    <span>Bag Discount</span>
+                    <span>-₹{discont}</span>
+                  </p>
+                  <p>
+                    <span>Sub Total</span>
+                    <span>₹{off_price}</span>
+                  </p>
+                  <p>
+                    <span>Shipping Charge</span>
+                    <span>🛈 Free</span>
+                  </p>
+                  <h3>
+                    <span>Grand Total</span>
+                    <span>₹{off_price}</span>
+                  </h3>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Have a coupon?"
+                  />
+                  <button>Views Coupon</button>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <footer>
+              <button>
+                <p>Grand Total:</p>
+                <p>₹{off_price}</p>
+              </button>
+              <button ><Link style={{ textDecoration: "none", color: "white" }} to="/address">
+                Procced ❯
+              </Link></button>
+            </footer>
+          </div>
+        </Div>
+      )}
       {/* <div className={styles.mainDiv}>
         <div>FLAT 10% OFF</div>
         <div

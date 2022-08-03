@@ -15,7 +15,7 @@ import {Payment} from './components/Payment/Payment';
 import { Footer } from './components/footer/Footer';
 // import  CartNavbar  from './components/Cart/navbar/CartNavbar';
 
-export const Api_Url = "http://localhost:8080"
+export const Api_Url = "https://nykaa-web-app-backend.herokuapp.com"
 
 
 function App() {

@@ -98,7 +98,7 @@ export const Cart = () => {
   return (
     <div>
       <>
-        {cartProducts.map((el,i) => (
+        {cartProducts?.map((el,i) => (
           <Div key={i}>
             <div className="card_div1">
               <div>
