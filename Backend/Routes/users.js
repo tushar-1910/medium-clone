@@ -8,4 +8,4 @@ Auth.post('/auth/register', AuthReq)
 Auth.post('/auth/login', AuthLog)
 
 
-module.exports = Auth
+module.exports = {Auth}

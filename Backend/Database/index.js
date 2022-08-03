@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 async function connectDB() {
-    const dbUri = "mongodb://localhost:27017/nykaa"
+    const dbUri = process.env.MONGO_URI
 
     try {
         await mongoose.connect(dbUri)
@@ -12,4 +13,4 @@ async function connectDB() {
     }
 }
 
-module.exports = connectDB;
+module.exports = {connectDB};

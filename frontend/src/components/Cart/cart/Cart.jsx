@@ -57,7 +57,7 @@ export const Cart = () => {
   let [cartProducts,setCartProducts] = useState([]);
   let token = localStorage.getItem("token");
   const getCart = async () => {
-    const res = await fetch("http://localhost:8080/getOrder",{
+    const res = await fetch("https://nykaa-web-app-backend.herokuapp.com/getOrder",{
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -72,7 +72,7 @@ export const Cart = () => {
   }
   ,[]);
   const changeQuantity = async (val, id) => {
-    let res = await fetch(`http://localhost:8080/updateCart`, {
+    let res = await fetch(`https://nykaa-web-app-backend.herokuapp.com/updateCart`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -84,7 +84,7 @@ export const Cart = () => {
       getCart();
   };
   const deleteItem = async (id) => {
-    let res = await fetch(`http://localhost:8080/deleteOrder`, {
+    let res = await fetch(`https://nykaa-web-app-backend.herokuapp.com/deleteOrder`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

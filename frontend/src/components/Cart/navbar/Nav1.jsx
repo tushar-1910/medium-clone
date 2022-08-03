@@ -202,7 +202,7 @@ const {showBag,handleshowBag}=useContext(Contexts)
   let [cartProducts,setCartProducts] = useState([]);
   let token = localStorage.getItem("token");
   const getCart = async () => {
-    const res = await fetch("http://localhost:8080/getOrder",{
+    const res = await fetch("https://nykaa-web-app-backend.herokuapp.com/getOrder",{
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -212,11 +212,10 @@ const {showBag,handleshowBag}=useContext(Contexts)
     let data = await res.json();
     setCartProducts(data);
   }
-  if(showBag){
+  useEffect(() => {
     getCart();
-    }
-  
-  let price = 0;
+  },[]);
+let price = 0;
   let discont = 0;
   let off_price = 0;
   for (let item of cartProducts) {

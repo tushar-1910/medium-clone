@@ -32,7 +32,7 @@ const addressChange = async (e)=>{
   console.log(addressData)
   if (address && name && number){
    
-  let res = await fetch("http://localhost:8080/address",{
+  let res = await fetch("https://nykaa-web-app-backend.herokuapp.com/address",{
     method:"POST",
     body:JSON.stringify(addressData),
     headers:{

@@ -9,4 +9,4 @@ orderRouter.post('/createOrder/:product',createOrder);
 orderRouter.delete('/deleteOrder',deleteCart);
 orderRouter.patch('/updateCart',updateCart);
 
-module.exports = orderRouter;
+module.exports = {orderRouter};

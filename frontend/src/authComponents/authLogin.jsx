@@ -57,11 +57,12 @@ export const AuthLog = () => {
     const HandleLogin = () => {
         Login()
         .then((res) => {
+            console.log(res)
             if(res === null){
                 setincorrectPass(true)
-                localStorage.setItem("token", "")
+                localStorage.deleteItem("token")
             }else{
-                localStorage.setItem("token", res)
+                localStorage.setItem("token", res.encryptionToken)
                 setincorrectPass(false)
                 dispatch(InputData(""))
                 navigate("/")

@@ -1,4 +1,4 @@
-const addressData = require("../database/address");
+const {addressData} = require("../Database/address");
 const jwt = require("jsonwebtoken");
 
 async function postdata(req,res,next){

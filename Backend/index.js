@@ -1,11 +1,13 @@
 const express = require('express');
 const cors = require('cors');
-const  connectDB  = require('./Database');
-const orderRouter = require('./Routes/orders');
-const Auth = require('./Routes/users');
-const productRouter = require('./Routes/products');
-const addressRouter = require('./Routes/address');
+const  {connectDB}  = require('./Database');
+const {orderRouter} = require('./Routes/orders');
+const {Auth} = require('./Routes/users');
+const {productRouter} = require('./Routes/products');
+const {addressRouter} = require('./Routes/address');
+require('dotenv').config();
 
+const port = process.env.PORT ;
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -22,7 +24,7 @@ app.use(orderRouter);
 app.use(addressRouter);
 
 connectDB().then(() => {
-    app.listen(8080, () => {
-        console.log('Server started on port 8080');
+    app.listen(port, () => {
+        console.log(`Server started on port ${port}`);
 });});
 

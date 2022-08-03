@@ -45,63 +45,63 @@ export const Moisturizers=()=>{
     
     useEffect(()=>{
       if(type===""){
-        fetch(`http://localhost:8080/productbycategory/?category=Moisturizers`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/productbycategory/?category=Moisturizers`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="popularity"){
-        fetch(`http://localhost:8080/productbycategory/?category=Moisturizers`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/productbycategory/?category=Moisturizers`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="facemoisturizers"){
-        fetch(`http://localhost:8080/productbycategory/?category=Moisturizers`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/productbycategory/?category=Moisturizers`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="nightcreams"){
-        fetch(`http://localhost:8080/productbycategory/?category=nightcreams`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/productbycategory/?category=nightcreams`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="faceoils"){
-        fetch(`http://localhost:8080/productbycategory/?category=faceoils`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/productbycategory/?category=faceoils`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="allcreams"){
-        fetch(`http://localhost:8080/product/?sort=popularity`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/product/?sort=popularity`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="discount"){
-        fetch(`http://localhost:8080/product/?sort=discount&order=Dsc`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/product/?sort=discount&order=Dsc`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="name"){
-        fetch(`http://localhost:8080/product/?sort=name&order=Asc`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/product/?sort=name&order=Asc`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="rating"){
-        fetch(`http://localhost:8080/product/?sort=rating&order=Dsc`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/product/?sort=rating&order=Dsc`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="newarrival"){
-        fetch(`http://localhost:8080/product/?sort=newarrival&order=Dsc`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/product/?sort=newarrival&order=Dsc`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="lowtohigh"){
-        fetch(`http://localhost:8080/product/?sort=lowtohigh&order=Dsc`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/product/?sort=lowtohigh&order=Dsc`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="hightolow"){
-        fetch(`http://localhost:8080/product/?sort=hightolow&order=Dsc`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/product/?sort=hightolow&order=Dsc`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="nykaproducts"){
-        fetch(`http://localhost:8080/product/?sort=nykaproducts`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/product/?sort=nykaproducts`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="mamaearthproducts"){
-        fetch(`http://localhost:8080/product/?sort=mamaearthproducts`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/product/?sort=mamaearthproducts`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }else if(type==="pondsproducts"){
-        fetch(`http://localhost:8080/product/?sort=pondsproducts`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/product/?sort=pondsproducts`)
         .then((res)=>res.json())
         .then((response)=>setMoistdata(response));
       }

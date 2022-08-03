@@ -1,6 +1,5 @@
 const express = require('express')
-const addressData = require('../database/address')
-const { postdata,allusers} = require('../handlers/address')
+const { postdata,allusers} = require('../Handlers/address')
 
 
 
@@ -10,4 +9,4 @@ addressRouter.post('/address',postdata)
 
 
 
-module.exports=addressRouter;
+module.exports={addressRouter};

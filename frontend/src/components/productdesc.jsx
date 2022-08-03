@@ -11,7 +11,7 @@ export const ProductDescription=()=>{
     const {handleshowBag} = useContext(Contexts)
     
    const getProductById=async()=>{
-        fetch(`http://localhost:8080/products/${productId}`)
+        fetch(`https://nykaa-web-app-backend.herokuapp.com/products/${productId}`)
         .then((res)=>res.json())
         .then((response)=>setProddata(response));
    }
@@ -28,7 +28,7 @@ export const ProductDescription=()=>{
          quantity:1,
          ordertotal:500      
       }
-      fetch(`http://localhost:8080/createOrder/${productId}`,{
+      fetch(`https://nykaa-web-app-backend.herokuapp.com/createOrder/${productId}`,{
          method:"POST",
          body:JSON.stringify(dummydata),
          headers:{

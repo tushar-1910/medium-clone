@@ -1,6 +1,6 @@
-const AuthSchema = require("../Database/users");
+const {AuthSchema} = require("../Database/users");
 const jwt = require("jsonwebtoken");
-const SECRET = "ThisWouldBeTheBestNYKAAclone"
+require("dotenv").config();
 
 async function figAuth(req,res){
     const { input } = req.body
@@ -76,7 +76,7 @@ async function AuthLog(req,res){
                     let encryptionToken = jwt.sign({
                         id: existingNumber._id,
                         first_name: existingNumber.first_name
-                    }, SECRET)
+                    }, process.env.SECRET)
                     
                     res.status(202).send(JSON.stringify(encryptionToken))
                 }else{
@@ -103,7 +103,7 @@ async function AuthLog(req,res){
                     let encryptionToken = jwt.sign({
                         id: existingEmail._id,
                         first_name: existingEmail.first_name
-                    }, SECRET)
+                    }, process.env.SECRET)
 
                     return res.status(202).send({encryptionToken})
                 }else{

@@ -13,5 +13,5 @@ productRouter.get('/productbycategory', getProductbyCategory);
 
 
 
-module.exports = productRouter;
+module.exports = {productRouter};
 

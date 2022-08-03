@@ -19,4 +19,4 @@ const  addressName = new mongoose.Schema({
 
 })
 const addressData = new mongoose.model("address",addressName)
- module.exports= addressData
+module.exports= {addressData}
