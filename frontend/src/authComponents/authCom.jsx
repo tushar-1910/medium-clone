@@ -56,7 +56,7 @@ export function AuthCom() {
   return (
     <div>
       <Button aria-describedby={id} variant="contained" color="inherit"  onClick={handleClick}
-      sx={{display:"flex", width:"100px", backgroundColor:"white", boxShadow:"none" }}>
+      sx={{display:"flex", width:"100px",background: "rgb(243, 243, 243)", boxShadow:"none" }}>
         {name}
       </Button>
 

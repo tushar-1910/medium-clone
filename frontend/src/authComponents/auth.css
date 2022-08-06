@@ -14,7 +14,7 @@ body{
     padding-top: 30px;
     padding-bottom: 10vh;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(243, 243, 243);
     border: 0.1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -58,5 +58,5 @@ body{
     color: rgba(0, 0, 0, 0.7);
     border-radius: 4px;
     border: 0.5px solid rgba(0, 0, 0, 0.6);
-    background-color: white;
+    background-color: rgb(243, 243, 243);
 }
