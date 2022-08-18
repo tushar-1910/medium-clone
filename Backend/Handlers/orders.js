@@ -8,9 +8,9 @@ const getOrder = async (req,res) => {
         const {token} = req.headers;
         let user = jwt.decode(token);
         const order = await Order.find({user: user.id}).populate('product');
-        res.status(200).json(order);
+        res.status(200).send(order);
     } catch (error) {
-        res.status(500).json({message: "No orders found"});
+        res.status(500).send({message: "No orders found"});
     }
 }
 
@@ -19,7 +19,7 @@ const createOrder = async (req,res) => {
     let {product} = req.params;
     let checkProduct = await Order.find({product: product});
     if(checkProduct.length > 0){
-       return res.status(200).json({message: "Product already in cart"});
+       return res.status(200).send({message: "Product already in cart"});
     }
     try {
         let orderId = randomstring.generate({
@@ -42,9 +42,9 @@ const createOrder = async (req,res) => {
         console.log(order)
         const newOrder = await Order(order);
         await newOrder.save();
-        res.status(200).json(order);
+        res.status(200).send(order);
     } catch (error) {
-        res.status(500).json({message: "Order not created"});
+        res.status(500).send({message: "Order not created"});
     }
 }
 
@@ -55,9 +55,9 @@ const updateCart = async (req,res) => {
         const {token} = req.headers;
         let user = jwt.decode(token);
         const order = await Order.findOneAndUpdate({user:user.id,product: id}, {$set: {quantity: val}});
-        res.status(200).json(order);
+        res.status(200).send(order);
     } catch (error) {
-        res.status(500).json({message: "Order not updated"});
+        res.status(500).send({message: "Order not updated"});
     }
 }
 
@@ -65,9 +65,9 @@ const deleteCart = async (req,res) => {
     try {
         const {id} = req.body;
         const order = await Order.findOneAndDelete({product: id});
-        res.status(200).json(order);
+        res.status(200).send(order);
     } catch (error) {
-        res.status(500).json({message: "Order not deleted"});
+        res.status(500).send({message: "Order not deleted"});
     }
 }
 

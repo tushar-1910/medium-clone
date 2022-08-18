@@ -455,7 +455,7 @@ export const Moisturizers=()=>{
     if(moistdata){
       return (
         <div className="moistCont1">
-          <Home />
+          {/* <Home /> */}
             <div className="moistCont11">
               <div className="moistCont111">
                 <ul className="cssR1">

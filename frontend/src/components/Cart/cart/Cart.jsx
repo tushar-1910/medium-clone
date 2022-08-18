@@ -54,7 +54,7 @@ const Div = styled.div`
 `;
 export const Cart = () => {
 
-  let [cartProducts,setCartProducts] = useState([]);
+  let [cartProducts,setCartProducts] = useState();
   let token = localStorage.getItem("token");
   const getCart = async () => {
     const res = await fetch("https://nykaa-web-app-backend.herokuapp.com/getOrder",{

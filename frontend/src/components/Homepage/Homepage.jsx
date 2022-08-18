@@ -14,7 +14,7 @@ import { Footer } from '../footer/Footer';
 function Homepage(){
 return(
     <>
-    <Home />
+    {/* <Home /> */}
     {/* <h2>this is my home page</h2> */}
     <img className='first-img1' src = "https://images-static.nykaa.com/uploads/c758ab69-2581-44a6-bcc2-b8e90fb5db13.gif?tr=w-1200,cm-pad_resize" alt = "" />
    {/* <div><Carousel1 /></div> */}

@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       {/* <CartNavbar/> */}
       {/* <Home /> */}
-      {/* <Home /> */}
+      <Home />
       <Routes>
         <Route path='/' element={< Homepage />}></Route>
         <Route path='/auth' element={<Auth />}></Route>
