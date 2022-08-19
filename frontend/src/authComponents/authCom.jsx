@@ -25,7 +25,8 @@ export function AuthCom() {
 
     const HandleLogout = () => {
         localStorage.removeItem("token")
-        setLoggedin(false)
+        setLoggedin(false);
+        navigate("/")
     }
 
 

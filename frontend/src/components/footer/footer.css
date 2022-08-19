@@ -1,5 +1,5 @@
 .Footer{
-    width:100vw;
+    width:100%;
     margin:auto;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .footer11{
-    width: 98vw;
+    width: 100%;
     /* margin-left:80px; */
     /* height: 176px; */
     margin:auto;

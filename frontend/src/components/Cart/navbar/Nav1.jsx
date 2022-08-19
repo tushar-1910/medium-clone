@@ -190,8 +190,61 @@ const Div = styled.div`
     }
 `;
 
+const Div1 = styled.div`
+  display: block;
+  width: 97%;
+  z-index: 10;
+  height: 10rem;
+  background-color: white;
+  margin: 1rem 0.7rem;
+  padding-top: 0.6rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  .card_div1 {
+    width: 100%;
+    display: flex;
+    & > div:nth-child(1) {
+      width: 30%;
+      background-color: white;
+      & > img {
+        width: 80%;
+      }
+    }
+    & > div:nth-child(2) {
+      width: 60%;
+    }
+    & > div:nth-child(3) {
+      width: 10%;
+      background-color: white;
+      & > img {
+        width: 60%;
+      }
+    }
+  }
+  .card_div2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 10;
+    & select {
+      border: none;
+      font-size: 17px;
+      option {
+        border: none;
+        font-size: 18px;
+      }
+    }
+    & select:avtive {
+      border: none;
+    }
+    & select option:disabled {
+      display: none;
+    }
+  }
+`;
+
 export const Nav1 = () => {
-  const { showBag, handleshowBag } = useContext(Contexts)
+  const { showBag, handleshowBag } = useContext(Contexts);
   let body = document.querySelector("body");
 
   if (showBag) {
@@ -201,26 +254,67 @@ export const Nav1 = () => {
   }
   let token = localStorage.getItem("token");
   let [cartProducts, setCartProducts] = useState([]);
+  let [price, setPrice] = useState();
+  let [discont, setDiscont] = useState();
+  let [off_price, setOff_price] = useState();
   const getCart = async () => {
-    const res = await fetch("https://nykaa-web-app-backend.herokuapp.com/getOrder", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        "token": token
+    const res = await fetch(
+      "https://nykaa-web-app-backend.herokuapp.com/getOrder",
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          token: token,
+        },
       }
-    });
+    );
     let data = await res.json();
+    // console.log(data);
     setCartProducts(data);
-  }
-  useEffect(() => {
-    getCart().then(()=>{cartTotal()})
+    cartTotal();
+  };
+  const changeQuantity = async (val, id) => {
+    let res = await fetch(
+      `https://nykaa-web-app-backend.herokuapp.com/updateCart`,
+      {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          token: token,
+        },
+        body: JSON.stringify({ val, id }),
+      }
+    );
+    let data = await res.json();
+    getCart();
+  };
+  const deleteItem = async (id) => {
+    let res = await fetch(
+      `https://nykaa-web-app-backend.herokuapp.com/deleteOrder`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          token: token,
+        },
+        body: JSON.stringify({ id }),
+      }
+    );
+    let data = await res.json();
+    getCart();
+  };
 
+  useEffect(() => {
+    getCart()
+    // .then(() => {
+    //   cartTotal();
+    // });
   }, []);
 
-  let price = 0;
-  let discont = 0;
-  let off_price = 0;
   const cartTotal = () => {
+    let price = 0;
+    let discont = 0;
+    let off_price = 0;
     for (let item of cartProducts) {
       price += +item.product.mrp * +item.quantity;
 
@@ -228,7 +322,10 @@ export const Nav1 = () => {
     }
     discont += price - off_price;
     localStorage.setItem("price", price);
-  }
+    setPrice(price);
+    setDiscont(discont);
+    setOff_price(off_price);
+  };
 
   return (
     <div>
@@ -238,12 +335,72 @@ export const Nav1 = () => {
           <div className="display">
             <header>
               <button onClick={handleshowBag}>❮</button>
-              <button>
-                Shopping Bag
-              </button>
+              <button>Shopping Bag</button>
             </header>
             <div>
-              <Cart />
+              <div>
+                <>
+                  {cartProducts?.map((el, i) => (
+                    <Div1 key={i}>
+                      <div className="card_div1">
+                        <div>
+                          <img src={el.product.image_url} alt="" />
+                        </div>
+                        <div>{el.product.name}</div>
+                        <div>
+                          <img
+                            src="https://cdn4.iconfinder.com/data/icons/linecon/512/delete-128.png"
+                            alt="delete"
+                            style={{ cursor: "pointer" }}
+                            onClick={() => deleteItem(el.product._id)}
+                          />
+                        </div>
+                      </div>
+                      <hr />
+                      <div className="card_div2">
+                        <div>
+                          Quantity:
+                          <select
+                            name="quan"
+                            onChange={(e) =>
+                              changeQuantity(e.target.value, el.product._id)
+                            }
+                          >
+                            <option
+                              style={{
+                                backgroundColor: "rgb(252, 39, 121)",
+                              }}
+                            >
+                              {+el.quantity}
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>+
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                        <div>
+                          <span
+                            style={{
+                              textDecoration: "line-through",
+                              marginRight: "0.5rem",
+                            }}
+                          >
+                            ₹{+el.product.mrp * +el.quantity}
+                          </span>
+                          <span>₹{+el.product.price * +el.quantity}</span>
+                        </div>
+                      </div>
+                    </Div1>
+                  ))}
+                </>
+              </div>
               <div className="total_price">
                 <div>Payment Details</div>
                 <div>
@@ -269,10 +426,7 @@ export const Nav1 = () => {
                   </h3>
                 </div>
                 <div>
-                  <input
-                    type="text"
-                    placeholder="Have a coupon?"
-                  />
+                  <input type="text" placeholder="Have a coupon?" />
                   <button>Views Coupon</button>
                   <div></div>
                 </div>
@@ -283,9 +437,15 @@ export const Nav1 = () => {
                 <p>Grand Total:</p>
                 <p>₹{off_price}</p>
               </button>
-              <button ><Link style={{ textDecoration: "none", color: "white" }} to="/address">
-                Procced ❯
-              </Link></button>
+              <button>
+                <Link
+                  style={{ textDecoration: "none", color: "white" }}
+                  to="/address"
+                  onClick={handleshowBag}
+                >
+                  Procced ❯
+                </Link>
+              </button>
             </footer>
           </div>
         </Div>

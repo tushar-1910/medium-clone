@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-const Div = styled.div`
+const Div1 = styled.div`
   display: block;
   width: 97%;
   z-index: 10;
@@ -54,7 +54,7 @@ const Div = styled.div`
 `;
 export const Cart = () => {
 
-  let [cartProducts,setCartProducts] = useState();
+  let [cartProducts,setCartProducts] = useState([]);
   let token = localStorage.getItem("token");
   const getCart = async () => {
     const res = await fetch("https://nykaa-web-app-backend.herokuapp.com/getOrder",{
@@ -67,10 +67,6 @@ export const Cart = () => {
     let data = await res.json();
     setCartProducts(data);
   }
-  useEffect(() => {
-    getCart();
-  }
-  ,[]);
   const changeQuantity = async (val, id) => {
     let res = await fetch(`https://nykaa-web-app-backend.herokuapp.com/updateCart`, {
       method: "PATCH",
@@ -99,7 +95,7 @@ export const Cart = () => {
     <div>
       <>
         {cartProducts?.map((el,i) => (
-          <Div key={i}>
+          <Div1 key={i}>
             <div className="card_div1">
               <div>
                 <img src={el.product.image_url} alt="" />
@@ -152,7 +148,7 @@ export const Cart = () => {
                 <span>₹{+(el.product.price )* +el.quantity}</span>
               </div>
             </div>
-          </Div>
+          </Div1>
         ))}
       </>
     </div>
