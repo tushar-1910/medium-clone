@@ -4,7 +4,7 @@
 
 
 <h4>Tech Stack: React | NodeJs | ExpressJs | MongoDB</h4>
-<h5>Features</h5>
+##Features
 <li>SignUp / Login with Google</li>
 <li>See products</li>
 <li>Add products in Cart</li>
