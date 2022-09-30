@@ -16,12 +16,8 @@ const getOrder = async (req,res) => {
 
 const createOrder = async (req,res) => {
     console.log(req.body);
-    let {product} = req.params;
-    let checkProduct = await Order.find({product: product});
-    if(checkProduct.length > 0){
-       return res.status(200).send({message: "Product already in cart"});
-    }
     try {
+        let {product} = req.params;
         let orderId = randomstring.generate({
             length: 6,
             charset: 'numeric'
@@ -30,6 +26,10 @@ const createOrder = async (req,res) => {
         var formatted = dt.format('d-m-Y');
         const {token} = req.headers;
         let user = jwt.decode(token);
+        let checkProduct = await Order.find({product:product,user:user.id});
+        if(checkProduct.length > 0){
+           return res.status(200).send({message: "Product already in cart"});
+        }
         let order = {
             orderId: orderId,
             orderDate: formatted,

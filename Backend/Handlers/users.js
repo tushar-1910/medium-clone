@@ -41,17 +41,16 @@ async function figAuth(req,res){
 }
 
 async function AuthReq(req,res){
-    const { ReqDataBody } = req.body
-
-    const data = {
-        first_name: ReqDataBody.first_name,
-        last_name: ReqDataBody.last_name,
-        phone_number: ReqDataBody.phone_number,
-        email: ReqDataBody.email,
-        password: ReqDataBody.password
-    }
-
     try {
+        const { ReqDataBody } = req.body
+    
+        const data = {
+            first_name: ReqDataBody.first_name,
+            last_name: ReqDataBody.last_name,
+            phone_number: ReqDataBody.phone_number,
+            email: ReqDataBody.email,
+            password: ReqDataBody.password
+        }
       await AuthSchema.create(data)
       return res.status(201).send("User Created Created")
     } catch (error) {
